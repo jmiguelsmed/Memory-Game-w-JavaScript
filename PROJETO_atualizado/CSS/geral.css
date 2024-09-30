@@ -1,0 +1,335 @@
+/*
+--.----------ITW23/24 - Grupo 39 ----------
+------------ Iolanda Leal 48069 -----------
+------------ José Medeiros 58607 ----------
+---------------Rita Wang 57143 ------------
+-------------------------------------------
+*/
+
+.caixa-estatisticas{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+.caixa-ultimos{
+    display:grid;
+    grid-template-columns: auto auto auto ;
+}
+
+
+
+.gato-pontuacoes{
+    position: relative;
+    display:flex;
+    list-style:none;
+    justify-content: center;
+    width: 100%;
+}
+    
+.gato-pontuacoes li{
+    display: inline-block;
+    justify-content: center;
+    padding: 0% 4rem; 
+}
+    
+    
+.gato-conjunto{
+    display:none;
+    width: 75%;
+}
+
+.gato-conjunto:target{
+    display:flex;
+}
+
+
+#modos-container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    width:80%;
+    margin:2rem auto auto auto;
+}
+
+.modos-coluna{
+    flex:30%;
+    text-align: center;
+    margin:1.5%;
+
+}
+
+#modos-container img {
+    width:60%;
+}
+
+.modos-centro{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+
+
+@keyframes login_register {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+
+}
+
+@keyframes growShrinkColor {
+    0%, 100% {
+        transform: scale(0.5);
+        color: black; /* Original color */
+    }
+    50% {
+        transform: scale(1.5);
+        color: red; /* New color */
+    }
+}
+
+.grow-shrink-color {
+    animation: growShrinkColor 1s ease-in-out;
+}
+
+
+.pagina-jogo {
+    display: flex;
+    height: calc(100vh - 3%); /* Subtract top margin */
+    justify-content:center;
+    align-items: center;
+    padding:5%;
+
+}
+
+.tabuleiro {
+    order: 2;
+    display:grid;
+    margin-left: 6%;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content:center;
+    align-items: center;
+    /* Set opacity to 0 to hide the board  opacity: 0.7;*/
+    gap:2rem;
+    width: 80%;
+}
+    
+
+.pagina-jogo-col-dir {
+    order: 3;
+     /*border-style:ridge; */
+    padding:2%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    min-width: 20%;
+}
+
+.pagina-jogo-col-esq {
+    order: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin-right: 2%;
+    max-width: 50%;
+    
+}
+
+
+@media (max-width: 769px) {
+
+    .gato-conjunto{
+        display:none;
+        width: 140%;
+        margin-left: -47%;
+    }
+
+    .gato-pontuacoes{
+        margin-left: -5%;
+    }
+
+    .gato-pontuacoes li{
+        display: flex;
+        justify-content: center;
+        margin-top:5%;
+    }
+
+    .modos-coluna{
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .modos-centro{
+        padding:1rem;
+    }
+
+    .pagina-jogo{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        align-items: center;
+        margin-top: 6%;
+    }
+
+    .tabuleiro{
+        grid-column: 1/2;
+        grid-row:3/4;
+        justify-content: center;
+    }
+
+    .pagina-jogo-col-esq{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+
+        
+    }
+
+    .pagina-jogo-col-dir{
+        grid-column:1/2;
+        grid-row:4/5;
+        padding:2%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+    }
+    .pagina-jogo-rodape {
+        grid-row: 5/6;
+        grid-column: 1/2;
+
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .pagina-jogo{
+        display:grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: auto auto auto;
+        align-items: center;
+        margin-top: 5%;
+        margin-right:10%;
+    }
+
+    .tabuleiro{
+        grid-column: 2/3;
+        grid-row:1/2;
+        justify-content: center;
+        margin-right:15%;
+    }
+
+    .pagina-jogo-col-esq{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .pagina-jogo-col-dir{
+        grid-column:1/3;
+        grid-row:2/3;
+        padding:2%;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pagina-jogo-rodape {
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+}
+
+
+    .alternative-layout-pagina-jogo{
+        display:grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+        margin-top: 6%;
+    }
+
+    .alternative-layout-tabuleiro{
+        grid-column: 2/3;
+        grid-row:1/3;
+        justify-content: center;
+    }
+
+    .alternative-layout-pagina-jogo-col-esq{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+
+        
+    }
+
+    .alternative-layout-pagina-jogo-col-dir{
+        grid-column:1/2;
+        grid-row:2/3;
+        padding:2%;
+        z-index: 2;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;
+        margin-right: 20%;
+    }
+    .alternative-layout-pagina-jogo-rodape {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+        .alternative-layout-jogo-informacao-table {
+            margin-top: 7%;
+            margin-bottom: 5%;
+            max-width: 60%;
+        }
+        .alternative-layout-funcoes-jogo{
+            padding:3% 1%;
+            font-size: 100%;
+            margin-left: 0%;
+            margin-top:5%;
+            max-width: 60%;
+        }
+    
+        .alternative-layout-funcoes-jogo-input{
+            width:7%;
+        }
+        alternative-layout-gato_lapis { 
+            width: 70%;
+            margin-top: 5%;
+        
+        }
+        .alternative-layout-comandos{
+            margin-left: 0%;
+            margin-top: 5%;
+            max-width: 60%;
+        }
+    
+        .alternative-layout-definicoes{
+            margin-bottom: 12%;
+        }
+        
+        .alternative-layout-musica{
+            margin-top: 7%;
+        }
+        
+        .alternative-layout-start_pause { 
+            margin-left: 0%;
+            margin-top: 20%;
+        }

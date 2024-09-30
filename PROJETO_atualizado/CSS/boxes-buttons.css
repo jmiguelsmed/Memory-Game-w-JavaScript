@@ -1,0 +1,428 @@
+/*
+--.----------ITW23/24 - Grupo 39 ----------
+------------ Iolanda Leal 48069 -----------
+------------ José Medeiros 58607 ----------
+---------------Rita Wang 57143 ------------
+-------------------------------------------
+*/
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility:visible;
+    opacity:1;
+}
+
+.botao-geral  {
+    padding: 8px 14px;
+    cursor:pointer;
+    border: 2px solid ;
+    box-shadow: 4px 4px 0 0;
+    transition-duration: 0.2s;
+  
+}
+
+.botao-geral:hover {
+      border: 2px solid ;
+      box-shadow: 0 0 0 0;
+      cursor:pointer;
+      transform: translate(2px,2px);
+}
+
+.login-signin{
+    width:50%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.login-signin-btn{
+    display: flex;
+    margin-top: 4rem;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.comandos {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    border: ridge red;
+    margin-top:20%;
+    text-align: center;
+    width:80%;
+    padding: 2% 5%;
+    padding-bottom:7%;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    margin-bottom:3%;
+  }
+  
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border:none;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%; 
+    background: red;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: lightcoral;
+}
+
+
+
+#definicoes{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-top: 33%;
+}
+
+
+#def{
+    padding: 2px 6px;
+}
+
+
+#baralho{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-top: 17%;
+}
+
+
+#deck{
+    padding: 2px 6px;
+}
+
+
+#musica{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+
+#play{
+    padding: 2px 6px;
+}
+
+
+#start_pause { 
+    margin-top: 20%;
+    width: 100%;
+    border: 2px solid black ;
+    color: white; /* Text color */
+    background-color: red; /* Button background color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 0 black; /* Black shadow */
+    font-size: 20px;
+    font-weight: bold;
+    margin-left:20%;
+}
+
+/* Código adicionado*/
+
+#okButton {
+    color:  red;
+
+}
+
+
+#again-btn {
+    margin-top:5%;
+}
+/* -------------------------------
+
+POPUP LOGIN E REGISTO
+
+---------------------------------*/
+
+.popup{
+    position: relative;
+    margin: 5% auto;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 5px;
+    width: 30%;
+    align-content: center;
+    min-width:20rem;
+}
+
+
+.popup .close {
+    position:absolute;
+    top:10px;
+    right:20px;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
+
+.popup .close:hover {
+    color: red;
+}
+
+
+.popup input, .popup select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#registar-btn{
+    justify-content: center;
+    margin-top:7%;
+    margin-left: 40%;
+    padding:2%;
+}
+
+.flex-registo{display: flex;
+    align-items: center; /*Alinha as coisas no centro */
+    padding:5%;
+}
+
+.col-registo{
+    flex-basis: 0;
+    flex-grow: 1; 
+}
+
+
+.col-registo1{
+    flex-grow:2;
+}
+
+.col-registo2{flex-grow:1;}
+
+
+
+/* -------------------------------
+
+MODO DE JOGO CONTRA TEMPO
+
+---------------------------------*/
+
+.time-container{
+    margin-bottom: -8%;
+    width:100%;
+}
+
+#timer{
+    margin-top: 18%;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    padding:2%;
+    background-color: lightgray;
+    opacity: 0.6;
+    box-shadow: 5px 10px 8px black;
+}
+
+#popup-CT{
+    height: 20%;
+}
+
+#popup-CT h2{
+    font-size: 140%;
+    font-style: italic;
+}
+
+#popup-CT a{
+    padding: 10%;
+}
+
+#ok-start{
+    margin-top:10%;
+    margin-left: 44%;
+}
+
+
+
+@media (min-width: 770px){
+
+
+
+    #login-btn{
+        justify-content: center;
+        margin-top:7%;
+        margin-left: 42%;
+        padding:2%;
+    }
+
+    #registar-btn{
+        justify-content: center;
+        margin-top:7%;
+        margin-left:42%;
+        padding:2%;
+    }
+
+
+
+}
+
+@media (max-width:769px) {
+
+   
+
+    #login-btn{
+        justify-content: center;
+        margin-top:7%;
+        margin-left: 42%;
+        padding:2%;
+    }
+
+    #registar-btn{
+        justify-content: center;
+        margin-top:7%;
+        margin-left: 40%;
+        padding:2%;
+    }
+
+    .comandos{
+        margin-left: 0%;
+        margin-top: 5%;
+        max-width: 60%;
+    }
+
+    #definicoes{
+        margin-bottom: 12%;
+    }
+    
+    #musica{
+        margin-top: 7%;
+    }
+    
+    #start_pause { 
+        margin-left: 0%;
+        margin-top: 20%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .comandos {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 30% 40% 30%;
+        width:10%;
+        padding:1%;
+        padding-bottom: 3%;
+        margin-top:5%;
+    }
+
+    #definicoes{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-bottom: 35%;
+    }
+    
+    #def{
+        padding: 2px 6px;
+        padding-right: 12%;
+        margin-left: -3%;
+    }
+    
+    #baralho{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    #deck{
+        padding: 2px 6px;
+        padding-right: 12%;
+        margin-top:20%;
+    }
+    
+    #musica{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+    #play{
+        padding: 2px 6px;
+        padding-right: 12%;
+    }
+
+    #start_pause { 
+        width: 75%;
+        margin-left: 50%;
+       
+    }
+
+    .time-container{
+        width:100%;
+        margin-top:-15%;
+    }
+}
+
+/* NOVO: perfil*/
+
+#edit-profile-form{
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+}
+
+
+.lapis-perfil{
+    cursor:pointer;
+
+}
+
+fieldset{border-radius: 5px;
+    padding:2rem 4% ;
+
+}
+
+fieldset legend{color: red;
+;}
+
+
+.close-edit{  margin-left: 1rem;;
+}
+
+#edit-profile-form input, #edit-profile-form select{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}

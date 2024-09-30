@@ -1,0 +1,180 @@
+/*
+--.----------ITW23/24 - Grupo 39 ----------
+------------ Iolanda Leal 48069 -----------
+------------ José Medeiros 58607 ----------
+---------------Rita Wang 57143 ------------
+-------------------------------------------
+*/
+
+.inicial-cartas-layout{
+    width:80%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.inicial-layout-container {
+    height:120px;
+    width:120px;
+    perspective:1000px;
+}
+
+.inicial-layout-container img{
+    width:100%;
+}
+
+
+.inicial-layout-container:hover .container-card {
+    transform:rotateY(180deg);
+}
+
+.container-card {
+    height:100%;
+    width:100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    border-style: solid;
+    border-image-width: auto;
+    border-radius:5%;
+}
+
+
+.cards-front, .cards-back {
+    height:100%;
+    width:100%;
+    position: absolute;
+    backface-visibility:hidden;   
+}
+
+
+.cards-back{
+    transform:rotateY(180deg);
+}
+
+
+.inicial-cards-nao-vira{
+    height:100%;
+    width:100%;
+    border-style: solid;
+    border-image-width: auto;
+    border-radius:5%;
+}
+
+.inicial-layout-linha-1 {
+    display: flex;
+    margin-top:1rem;
+    height:100%;
+    width: 100%;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.inicial-layout-linha-2 {
+    display: flex;
+    height:100%;
+    width: 100%;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-top:2rem;
+    gap:1rem;
+}
+
+
+@media (min-width: 1200px) {
+.jogo-carta-container {
+    height:8rem;
+    width:8rem;
+    border: lightgray dashed;   
+    padding:2%;
+    padding-right:6%;  
+    padding-bottom:6%;                           
+}
+}
+
+.jogo-carta-container img{
+    width:100%;
+}
+
+.funcoes-jogo{
+    border: ridge red;
+    font-size: 120%;
+    padding: 5% 3%;
+    width: 84%;
+
+}
+
+
+.funcoes-jogo input{
+    background-color: #f2f2f2;
+    text-align: center;
+    width:15%;
+}
+
+
+/* CODIGO ADDED PAG_JOGO */
+#countdown {                    /* Cartas a balharar.... Boa sorte !*/
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    color: red;
+    display: none;
+}
+
+@media (max-width: 769px) {
+    .inicial-cartas-layout{
+        display: grid;
+        grid-column: auto auto;
+    }
+
+    .jogo-carta-container {
+        height:5rem;
+        width:5rem;                                       
+    }
+
+    .jogo-carta-container img{
+        width:100%;
+    }
+
+    .funcoes-jogo{
+        padding:3% 1%;
+        font-size: 100%;
+        margin-left: 0%;
+        margin-top:5%;
+        max-width: 60%;
+    }
+
+    .funcoes-jogo input{
+        width:7%;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .inicial-cartas-layout{
+        display: grid;
+        grid-column: auto auto;
+    }
+
+    .jogo-carta-container {
+        height:6rem;
+        width:6rem;                                   
+    }
+
+    .jogo-carta-container img{
+        width:100%;
+    }
+
+    .funcoes-jogo{
+        padding: 1% 3%;
+        width: 20%;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+
+    .funcoes-jogo input{
+        width:20%;
+    }
+
+}

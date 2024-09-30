@@ -1,0 +1,144 @@
+/*
+--.----------ITW23/24 - Grupo 39 ----------
+------------ Iolanda Leal 48069 -----------
+------------ José Medeiros 58607 ----------
+---------------Rita Wang 57143 ------------
+-------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Varela Round", sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 440%;
+    letter-spacing: 60%;
+    font-weight: 100;
+}
+
+.h1-center {
+    text-align:center;
+    margin-bottom:1rem;               
+}
+
+.h1-left {
+    text-align: left;
+    margin-left: 5%;                
+}
+
+h2 {
+    font-size: 250%;
+    letter-spacing: 60%;
+    font-weight: 100;
+}
+
+.h2-center {
+    text-align:center;
+    margin-top:0;
+    margin-bottom: 2rem;
+}
+
+.h2-left {
+    text-align: left;
+    margin-bottom:2%;
+    font-weight: 100;
+}
+
+h3 {
+    overflow: auto;
+    letter-spacing: 60%;
+    font-weight: 100;
+
+}
+
+.h3-center {
+    
+    text-align: center;
+    font-size: 100%;
+    margin-top: 2%;
+}
+
+.h3-left {
+    text-align: left;
+    font-size:250%;
+    margin-top:2.5%;
+    margin-left: 5%;
+}
+
+.texto-informativo-center {
+
+    text-align: center; 
+    font-size:100%;
+    margin-left: 20%;
+    font-weight: 100;
+    width: 60%;
+}
+
+.texto-informativo-left {
+
+    text-align: left; 
+    font-size:100%;
+    margin: 0% 5%;
+    font-weight: 100;
+    width: 60%;
+}
+
+
+.nome{
+    font-weight: bold;
+}
+
+.estatisticas, .ultimos{
+    margin: 5rem auto 2rem auto;
+    width:80%;
+}
+.estatisticas h2, .ultimos h2{
+    border-bottom-style: solid;
+    font-weight: bold;
+}
+
+.red{
+    color:red
+}
+
+#timer p, #timer span{
+    font-size: 140%;
+    opacity: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dados-jogador {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+@media (max-width: 769px) {
+
+    .h1-left {
+        text-align: center;
+        margin-bottom:1rem;            
+    }
+    
+    .p-footer{
+        font-size: 80%; 
+    }
+
+    .texto-informativo-left {
+        text-align: center; 
+        font-size:100%;
+        margin-left: 20%;
+        font-weight: 100;
+        width: 60%;
+    }
+
+}

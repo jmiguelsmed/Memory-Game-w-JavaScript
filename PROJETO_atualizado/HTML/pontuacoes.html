@@ -1,0 +1,71 @@
+<!-- ----------ITW23/24 - Grupo 39 ----------
+------------- Iolanda Leal 48069 ------------
+------------- José Medeiros 58607 -----------
+-------------Rita Wang 57143 ----------------
+--------------------------------------------- -->
+
+<!doctype html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>
+            AQUI HÁ GATO!
+        </title>
+        <link rel="stylesheet" type="text/css" href="../CSS/text.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/geral.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/media.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/header-footer.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/tables.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/boxes-buttons.css">
+
+        <script src="../JS/main.js"></script> 
+        <script src="../JS/registo_login.js"></script>
+
+    </head>
+    <body>
+        <my-header></my-header>
+
+        <h1 class = "h1-center"> TOP <span class="red">10</span> JOGADORES </h1>
+        
+        
+        <div class="gato-pontuacoes">
+            <ul>
+                <li>
+                    <button class = "botao-geral" id = "modo-classico-btn"> Modo Classico </button>
+                </li>
+                <li>
+                    <button class = "botao-geral" id = "modo-contra-tempo-btn"> Modo Contra o Tempo </button>
+                </li>
+                <li>
+                    <button class = "botao-geral" id = "modo-trio-btn"> Modo Trio de Cartas</button></li>
+            </ul>
+        </div>
+
+        <div id="table-box">
+            <table class = "pontuacoes-tabela" id="leaderboard">
+                <thead>
+                    <tr>
+                        <th id = "lugar"></th>
+                        <th id = "nome"></th>
+                        <th id = "tipo"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- scores will be inserted by the script here -->
+                </tbody>
+            </table>
+
+        </div>
+        
+            
+        
+        <div>
+            <my-footer></my-footer>
+        </div>
+    
+        <script src="../JS/pontuacoes.js"></script>
+    </body>
+
+</html>

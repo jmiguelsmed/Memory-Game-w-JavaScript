@@ -1,0 +1,225 @@
+<!-- ----------ITW23/24 - Grupo 39 ----------
+------------- Iolanda Leal 48069 ------------
+------------- José Medeiros 58607 -----------
+-------------Rita Wang 57143 ----------------
+--------------------------------------------- -->
+
+
+<!doctype html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>
+            AQUI HÁ GATO!
+        </title>
+        <link rel="stylesheet" type="text/css" href="../CSS/funcionalidades.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/text.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/boxes-buttons.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/geral.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/media.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/header-footer.css">
+
+        <script src="../JS/main.js"></script>   
+
+        
+    </head>
+    <body>
+        <my-header></my-header>
+
+
+        <h1 class = "h1-center">
+            AQUI HÁ <span class="red">GATO</span>!
+        </h1>
+        
+        <h2 class = "h2-center">
+            Jogo de Memória
+        </h2>
+    
+        <div class="inicial-cartas-layout">
+            <div class="inicial-layout-linha-1">
+            
+                <!-- CARTA 1/1 -->
+                
+                    <div class="inicial-layout-container">
+                        <div class="container-card">
+                            <div class="cards-front">
+                                <img src="../Imagens/inicial/pata.jpg">
+                            </div>
+                            <div class="cards-back">
+                                <img src="../Imagens/inicial/gato%20(2).png">
+                            </div>
+                        </div>
+                    </div>
+                
+
+                
+                <!-- CARTA 1/2 -->
+                
+                    <div class="inicial-layout-container">
+                        <div class="inicial-cards-nao-vira"><img src="../Imagens/inicial/gato%20(4).png"></div>
+                    </div>
+                
+                
+                
+                <!-- CARTA 1/3 -->
+                
+                    <div class="inicial-layout-container">
+                        <div class="container-card">
+                            <div class="cards-front">
+                                <img src="../Imagens/inicial/pata.jpg">
+                            </div>
+                            <div class="cards-back">
+                                <img src="../Imagens/inicial/gato%20(1).png" >
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                
+                <!-- CARTA 1/4 -->
+                
+                    <div class="inicial-layout-container">
+                        <div class="container-card">
+                            <div class="cards-front">
+                                <img src="../Imagens/inicial/pata.jpg">
+                            </div>
+                            <div class="cards-back">
+                                <img src="../Imagens/inicial/gato%20(3).png">
+                            </div>
+                        </div>
+                    </div>
+                
+             
+        
+        </div>
+        
+        
+        <div class="inicial-layout-linha-2">
+           
+                <!-- CARTA 2/1 -->
+                
+                    <div class="inicial-layout-container">
+                        <div class="inicial-cards-nao-vira"><img src="../Imagens/inicial/gato%20(1).png"></div>
+                    </div>
+                
+                
+                <!-- CARTA 2/2 -->
+                
+                    <div class="inicial-layout-container">
+                        <div class="container-card">
+                            <div class="cards-front">
+                                <img src="../Imagens/inicial/pata.jpg">
+                            </div>
+                            <div class="cards-back">
+                                <img src="../Imagens/inicial/gato%20(2).png" >
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                <!-- CARTA 2/3 -->
+                
+                    <div class="inicial-layout-container">
+                        <div class="inicial-cards-nao-vira"><img src="../Imagens/inicial/gato%20(4).png"></div>
+                    </div>
+                
+                
+                <!-- CARTA 2/4 -->
+              
+                    <div class="inicial-layout-container">
+                        <div class="inicial-cards-nao-vira"><img src="../Imagens/inicial/gato%20(3).png"></div>
+                    </div>
+            
+        </div>
+        </div>
+            
+        <div class="login-signin">
+            <div class="login-signin-btn">
+                <a href="#popup-login"><button class="botao-geral"> Login</button></a>
+                <a href="#popup-registar"><button class="botao-geral"> Registar</button></a>
+            </div>
+        </div>
+
+        <div id="popup-login" class="overlay">
+            <div class="popup">
+                    <h2 class = "h2-center"> Entra no Jogo!</h2>
+                    <a class="close" href="#">&times;</a>
+
+                <div class="flex-registo">
+                    <form id="login-form" class="col-registo col-registo1">
+                        <label>Email</label>
+                        <input type="email" id="login-email" placeholder="Introduz o teu email" required> <br>
+
+                        <label>Password</label>
+                        <input type="password" id="login-password" placeholder="Introduz a tua password" required> <br>
+                    
+                    </form>
+                    <div class="gato_registar_login col-registo col-registo2">
+                        <img src="../Imagens/inicial/img_entry_0043.png">
+                    </div>
+                </div>
+
+                    
+                    <button type="submit" class = "botao-geral" id = "login-btn" form="login-form"> Login </button></a>
+            </div>
+        </div>
+
+        <div id="popup-registar" class="overlay">
+            <div class="popup">
+                    <h2 class = "h2-center"> Bem-vindo!</h2>
+
+                    <a class="close" href="#">&times;</a>
+                    <div class="flex-registo">
+
+                        <form id="signup-form" class="col-registo col-registo1">
+                            <label>Username</label><br>
+                            <input type="text" id="signup-username" placeholder="Username" required maxlength="15"> <br>
+    
+                                <label>Email</label><br>
+                                <input type="email" id="signup-email" placeholder="doglover@email.com" required> <br>
+                            
+                                <label>Password</label><br>
+                                <input type="password" id="signup-password" name="password" placeholder="Password" required><br>
+                            
+                                <label>Género</label><br>
+                                <select id="genero" required>
+                                    <option value="masculino" name="genero">Masculino</option>
+                                    <option value="feminino" name="genero">Feminino</option>
+                                    <option value="outro" name="genero">Outro</option>
+                                </select> <br>
+    
+                                <label>Idade</label><br>
+                                <select id="idade" required>
+                                    <option value="menos18" name="idade">Abaixo de 18</option>
+                                    <option value="18-24" name="idade">18-24</option>
+                                    <option value="25-34" name="idade">25-34</option>
+                                    <option value="35-44" name="idade">35-44</option>
+                                    <option value="45-54" name="idade">45-54</option>
+                                    <option value="55-64" name="idade">55-64</option>
+                                    <option value="65mais" name="idade">65+</option>
+                                </select> <br>
+                        </form>
+    
+                        <div class="gato_registar_login col-registo col-registo2">
+                            <img src="../Imagens/inicial/gato_registar.png">
+                        </div>
+
+
+                    </div>
+                    
+                           
+                        
+                        <button type="submit" class = "botao-geral" id = "registar-btn" form="signup-form"> Registar </button></a>
+
+            </div>
+        </div>
+        <my-footer></my-footer>
+
+        <script src="../JS/registo_login.js"></script>
+
+    </body>
+    
+</html>
+
+    

@@ -1,0 +1,191 @@
+/*
+--.----------ITW23/24 - Grupo 39 ----------
+------------ Iolanda Leal 48069 -----------
+------------ José Medeiros 58607 ----------
+---------------Rita Wang 57143 ------------
+-------------------------------------------
+*/
+
+.dropdown-header a {
+    margin: 0 1.5rem;
+    color: black;
+    text-decoration: none;
+
+}
+
+.perfil-conteudo a {
+    color: black;
+    text-decoration: none;
+    background-color: #f9f9f9;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+a:hover {
+    color:red;
+}
+
+#link-logout{
+    cursor:pointer;
+}
+
+.logo img {
+    max-height: 2.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-bottom:0%;
+    color:black;
+    margin-top:3%;
+}
+
+footer a{
+    color:black;
+}
+
+footer a:hover {
+    color:red;
+}
+
+  
+@media (min-width: 769px) {
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem;
+    }
+    
+    .logo{
+        margin-left:5%;
+    }
+
+    .tog{
+        display:none;
+    }
+
+    .dropdown-profile{
+        margin-right: 5%;
+        text-align: center;
+    }
+
+
+    .perfil-conteudo{
+        position: absolute;
+        margin-top: 1.2rem;
+    }
+
+    .perfil-conteudo a{
+        position: relative;
+        padding: 10px 14px;
+        z-index: 1;
+    }
+    
+    .perfil-conteudo a{
+        display:flex;
+        margin-bottom:0.2rem;
+    }
+
+    .perfil-conteudo a img{
+        height:17px;
+        margin-right:1.5rem;
+    }
+    
+    .dropdown-profile .perfil-conteudo{
+        display:none;
+    }
+
+    .dropdown-profile:hover .perfil-conteudo{
+        display:inline;
+        top:2rem;
+        right:2.5rem;
+    }
+
+}
+
+@media (max-width:769px) {
+
+    .logo,.profile {
+        text-align: center;
+        display:inline;
+        margin-left:47%;
+    }
+
+    .logo img{
+        margin-top:1rem;
+        margin-bottom:1rem;
+    }
+
+    .dropdown-header{
+        position:absolute;
+        top:0.4rem;
+        right:5%;
+        text-align: right;
+        display:inline;
+        background-color:white;
+    }
+
+    .dropdown-header svg {
+        width:2rem;
+        transition: 0.4s ;
+    }
+    
+    .dropdown-header a{
+        display:block;
+        margin:0.5rem 0 0.5rem 0;
+    }
+
+    .dropdown-header .content{
+        display:none;
+    }
+
+    .dropdown-header svg:hover{
+        transform:scale(1.2)
+    }
+
+    .dropdown-header:hover .content{
+        display:block;
+    }
+
+    .dropdown-profile{
+        text-align: center;
+    }
+        
+    .dropdown-profile a{
+        display:block;
+    }
+
+    .perfil-conteudo{
+        position: absolute;
+        margin-top: 3rem;
+    }
+
+    .perfil-conteudo a{
+        position: relative;
+        padding:7px 0px;
+        z-index: 1;
+        
+    }
+    
+    .perfil-conteudo a{
+        display:inline-block;
+
+    }
+
+    .perfil-conteudo a img{
+        height:17px;
+        margin-right:1rem;
+    }
+    
+    .dropdown-profile .perfil-conteudo{
+        display:none;
+    }
+
+    .dropdown-profile:hover .perfil-conteudo{
+        display:inline;
+        top:3.5rem;
+        right:30%;
+    }
+}

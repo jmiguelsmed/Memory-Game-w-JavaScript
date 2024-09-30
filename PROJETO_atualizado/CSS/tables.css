@@ -1,0 +1,86 @@
+/*
+--.----------ITW23/24 - Grupo 39 ----------
+------------ Iolanda Leal 48069 -----------
+------------ José Medeiros 58607 ----------
+---------------Rita Wang 57143 ------------
+-------------------------------------------
+*/
+
+#table-box{
+    margin-top:3%;
+}
+.pontuacoes-tabela{
+    margin-left:25%;
+    border-collapse: separate;
+    border-spacing: 50px 0;
+    width: 50%;
+}
+
+.pontuacoes-tabela td {
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.jogo-informacao-table {
+    border-collapse: collapse;
+    margin-top: 10%;
+    width: 60%; /* Increase this to make the table wider */
+    height: 70%; /* Increase this to make the table taller */
+}
+
+.jogo-informacao-table th, .jogo-informacao-table td {
+    font-size: 100%;
+    width: 80%;                                         
+    border: ridge black;
+    text-align: center;
+}
+
+.jogo-informacao-table th {
+    font-size: 100%;
+    width: 70%; /* Reduced width */
+    padding: 5% 2% 5% 2%;
+    border: ridge black;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.jogo-informacao-table td {
+    font-size: 100%;
+    width: 90%; /* Increased width */
+    padding: 5% 0% 5% 0%; /* Corrected padding */
+    border: ridge black;
+    text-align: center;
+}
+
+.jogo-informacao-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .jogo-informacao-table {
+        margin-top: 7%;
+        margin-bottom: 5%;
+        max-width: 60%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .jogo-informacao-table {
+        width: 35%;
+        padding: 1% 1% 1% 1%;
+        margin-top:7%;
+        margin-bottom: 9%;
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    .jogo-informacao-table th {
+
+        padding: 3% 1% 2% 3%;
+    }
+    .jogo-informacao-table td {
+        padding: 2% 0% 2% 0%; 
+
+    }
+}

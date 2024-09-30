@@ -1,0 +1,266 @@
+/*
+--.----------ITW23/24 - Grupo 39 ----------
+------------ Iolanda Leal 48069 -----------
+------------ José Medeiros 58607 ----------
+---------------Rita Wang 57143 ------------
+-------------------------------------------
+*/
+
+.logo img {
+    max-height: 2.5rem;
+  }
+
+
+.imagemfoot{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer img{
+    width:5rem;
+}
+
+.foto-perfil{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    width:11rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+    
+.foto-perfil img{
+    width:100%
+}
+
+.comandos img{
+    width:30px;
+    padding:2%;
+}
+
+/* Gato do registo login*/
+.gato_registar_login img{
+    width:100%;
+    padding:2%;
+}
+
+#gato_lapis{
+    width:100%;
+    margin-top: 10%;
+    margin-left:20%;
+}
+
+.lapis-perfil{
+    width:2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:11rem;
+}
+
+.lapis-perfil img{
+    width:100%;
+}
+
+#gato-fim-jogo{
+    width:60%;
+    margin-left:15%;
+    margin-bottom:10%;
+}
+
+
+@media (min-width: 770px){
+
+    .gato_curiosidades {
+        position: absolute;
+        top: 20%;
+        right: 0%;
+        left: 72%;
+        height: 60%;
+    }
+    
+    .gato_curiosidades img{
+        height: 80%;
+    }
+
+    .tutorial-box{
+        width: 60%;
+        margin: 0 auto;
+        background-image: url("../Imagens/geral/gato_tutorial.jpg");
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size:contain;
+        padding: 5% 7% 5% 7%;
+        border-radius: 50px/50px;
+        background-clip: padding-box;
+        justify-items: center;
+        margin-bottom:5%;
+    }
+    
+    video{
+        width: 80%;
+        display: block;
+        margin: 4% 15% 4% 10%;
+    }
+
+    .gatos_nos1 {
+        position: absolute;
+        margin-top: -10%;
+        height:100%;
+    }
+
+    .gatos_nos1 img{
+        height:25%;
+    }
+
+    .gatos_nos2 {
+        position: relative;
+        margin-left:30%;
+        height:100%;
+    }
+
+    .gatos_nos2 img{
+        height:25%;
+    }
+
+    .gatos_nos3 {
+        position: absolute;
+        margin-top: -10%;
+        margin-left:88.5%;
+        height:100%;
+    }
+
+    .gatos_nos3 img{
+        height:25%;
+    }
+
+    .foto-perfil{
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 5px;
+        width:11rem;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .foto-perfil img{
+        width:100%
+    }
+
+    .gato_geral {
+        position: fixed;
+        top: 20%;
+        left:70%;
+        max-width: 70%;
+        min-width: 30%; /* Limit the maximum width of the image */
+        z-index: 1; /* Ensure image stays above other content */
+    }
+    
+    .gato_geral img {
+        width: 80%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+
+}
+
+@media (max-width:769px) {
+
+    .logo img {
+        max-height: 2.5rem;
+        margin-left: -1%;
+      }
+
+    .gato_geral {
+        position: fixed;
+        top: 40%;
+        left:75%;
+        max-width: 70%;
+        min-width: 30%; /* Limit the maximum width of the image */
+        z-index: 1; /* Ensure image stays above other content */
+    }
+    
+    .gato_geral img {
+        width: 80%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .tutorial-box{
+        width: 80%;
+        margin: 0 auto;
+        background-image: url("../Imagens/geral/gato_tutorial.jpg");
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size:contain;
+        padding: 5% 10% 5% 10%;
+        border-radius: 50px/50px;
+        background-clip: padding-box;
+        justify-items: center;
+    }
+    
+    video{
+        width: 100%;
+        display: flex;
+    }
+
+    .gato_curiosidades {
+        position: relative;
+        margin-left:0%;
+        height: 20%;
+    }
+    
+    .gato_curiosidades img{
+        height: 100%;
+    }
+
+    .gatos_nos1 {
+        position: absolute;
+        top:30%;
+        left:0%;
+        height:100%;
+    }
+
+    .gatos_nos1 img{
+        height:10%;
+    }
+
+    .gatos_nos2 {
+        position: relative;
+        right: 2%;
+        bottom:0%;
+        height:100%;
+    }
+
+    .gatos_nos2 img{
+        height:5%;
+    }
+
+    .gatos_nos3 {
+        position: absolute;
+        top:40%;
+        right:0%;
+        height:100%;
+    }
+
+    .gatos_nos3 img{
+        height:10%;
+    }
+
+#gato_lapis { 
+    width: 70%;
+    margin-top: 5%;
+
+}
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+
+    #gato_lapis{
+        width:100%;
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+
+}
+

@@ -1,0 +1,53 @@
+ITW23/24 - Grupo 39 
+Iolanda Leal 48069
+José Medeiros 58607
+Rita Wang 57143
+
+Neste trabalho, cada elemento do grupo contribuiu 1/3 do total.
+
+
+REQUISITOS ESSENCIAIS:
+1. Modo individual
+2. Identificar: login e registo
+3. Depois de identificar vê o perfil, e no perfil podemos alterar os dados do jogador
+4. Tabuleiro com cartas para baixo e aleatórias
+5. Tempo decorrigo no jogo, pontos obtidos, e pontos restantes, botão terminar jogo
+6. Carta referenciada com número e podemos jogar digitando numero
+7. Se revelar 2 cartas iguais é atribuido 1 ponto
+8. Jogo termina quando revelados todos os pares ou carregado o botão
+9. Não temos a tabela, mas os dados são guardados na local storage.
+10. Conteúdo nas páginas ajustam-se automaticamente
+
+FUNCIONALIDADES ADICIONAIS:
+1. 3 coleções de figuras
+2. Várias configurações de tabuleiro: número de cartas, número de colunas
+3. 3 Temas diferentes, músicas diferentes
+4. Manipulação direta das cartas com o rato
+5. Corriga contra o tempo
+6. Trios de cartas
+
+NÃO FIZEMOS:
+1. Quando acedemos ao perfil não aparece as estatísticas todas
+2. Não temos tabela com top 10
+
+Iolanda fez:
+- Música nas páginas de jogo (JS)
+- interação dos botões na página de jogo (JS)
+- reorganização dos ficheiros html e css.
+- Modo de jogo: corrida contra o tempo
+- Imagem fim do jogo
+
+José fez:
+- Modo de jogo: clássico
+- Implementou a maior parte das funcionalidades do modo de jogo clássico, que foi usado para fazer os outros (JS + HTML): virar cartas, ver se as cartas são iguais,tornar as cartas aleatórias, etc.
+- Layout do tabuleiro
+
+
+
+Rita fez:
+- Login e registo (CSS + JS + Formulários)
+- Logout e aparecer/desaparecer do perfil
+- Edição do perfil
+- Modo de jogo: trios
+- Adição de 2 temas nos baralhos
+- Guardar os dados no final do jogo no local storage

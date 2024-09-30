@@ -1,0 +1,131 @@
+<!-- ----------ITW23/24 - Grupo 39 ----------
+------------- Iolanda Leal 48069 ------------
+------------- José Medeiros 58607 -----------
+-------------Rita Wang 57143 ----------------
+--------------------------------------------- -->
+
+
+<!doctype html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>
+            AQUI HÁ GATO!
+        </title>
+        <link rel="stylesheet" type="text/css" href="../CSS/text.css">    
+        <link rel="stylesheet" type="text/css" href="../CSS/tables.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/geral.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/media.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/header-footer.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/funcionalidades.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/boxes-buttons.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/adicoes_pag_jogo.css">
+
+        <script src="../JS/main.js"></script>   
+        <script src="../JS/registo_login.js"></script>
+
+    </head>
+    <body>
+        <my-header></my-header>
+        <div class = "pagina-jogo">
+            <div class ="tabuleiro" id="tabuleiro">
+            </div>
+
+            <div class = "pagina-jogo-col-dir">
+                <div class="funcoes-jogo">
+                    <span> <span class="red">Clique</span> na carta ou <span>digite</span> o número:</span>
+                    <input type="text" id="numb" name="number" required>
+                    <button id="okButton">OK</button>
+                </div>
+                <table class = "jogo-informacao-table">
+                    <tr>
+                        <th colspan="2">Dados do Jogo</th>
+                    </tr>
+                    <tr>
+                        <th scope ="row"> Máx Pontos</th>
+                        <td id="max">10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pontos</th>
+                        <td id="pontos1">2</td>
+                    </tr>
+                    <tr>
+                        <th scope ="row">Tentativas</th>
+                        <td id="trys1">3</td>
+                    </tr>
+                    <tr>
+                        <th scope ="row">Tempo</th>
+                        <td id="tempo1">0</td>
+                    </tr>
+
+                </table>
+            <div class="comandos">
+                <div id = "definicoes">
+                    <a href = "modos_de_jogo.html"><button class ="botao-geral" id="def"><img id = "" src="../Imagens/jogo/exit.png"></button></a>
+                </div>
+                <div id = "baralho">
+                    <a href="#popup-baralho"><button class ="botao-geral" id="deck"><img id = "" src="../Imagens/jogo/deck.png"></button></a>
+                </div>
+
+
+                <div id="popup-baralho" class="overlay">
+                    <div  id="in-popup-baralho" class="popup">
+                        <h3>Escolha o tema desejado!</h3>
+                        <div class="baralhos">
+                        <img id="baralho-1" src="../Imagens/inicial/gato%20(2).png" >
+                        <img id="baralho-2" src="../Imagens/jogo/deck2/joaovital.jpg" >
+                        <img id="baralho-3"src="../Imagens/jogo/deck3/pingu-icon.jpg">
+                        </div>
+
+                        <div id="nr_cartas"><span>Número de cartas:</span> <input class="input_popup" id="val_cartas" value="20"></div>
+                        <div id="nr_col"><span>Número de colunas:</span> <input class="input_popup" id="val_col" value="5"></div>
+
+                        <button type="submit" class = "botao-geral" id="ok_deck"> OK </button>
+                    </div>
+                </div>
+
+
+                <div id = "musica">
+                    <audio id = "music" loop controls hidden>
+                    </audio>
+                    <div class="slidecontainer">
+                        <input class="slider" type="range" min="0" max="1" step="0.01" id="volume-slider" />
+                      </div>
+                    <button class ="botao-geral" id="play"><img id="img-music-btn" src="../Imagens/jogo/jogar.png"></button>
+                </div>
+            </div>
+            
+            </div>
+
+            <div class = "pagina-jogo-col-esq">
+                <div id="countdown"><span> A baralhar as cartas ...</span></div>
+                <a><button class ="botao-geral" id="start_pause">START</button></a>
+                <img id = "gato_lapis" src="../Imagens/jogo/gato_jogo.png">
+
+            </div>
+
+        </div>
+        <div class="pagina-jogo-rodape">
+            <my-footer></my-footer>
+        </div>
+
+        <div id="popup-pause" class="overlay">
+            <div id="in-popup-pause" class="popup">
+            <h3 class="h2-center">O jogo está pausado</h3>
+            <img id="gato-pausado"src="../Imagens/jogo/sleepycat.png">
+        <div class="buttons-pause">
+            <button id="resume-btn" class="botao-geral">Voltar ao jogo</button>
+            <a href="modos_de_jogo.html" title="Leave Game"><button id="leave-btn" class="botao-geral">Sair do jogo</button></a>
+        </div>
+
+        </div>
+                    
+
+        <script src="../JS/variables.js"></script>
+        <script src="../JS/pag_jogo.js"></script>
+        <script src="../JS/media.js"></script>
+    </body>
+</html>
+      
+

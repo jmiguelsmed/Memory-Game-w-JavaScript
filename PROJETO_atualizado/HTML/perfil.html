@@ -1,0 +1,116 @@
+<!-- ----------ITW23/24 - Grupo 39 ----------
+------------- Iolanda Leal 48069 ------------
+------------- José Medeiros 58607 -----------
+-------------Rita Wang 57143 ----------------
+--------------------------------------------- -->
+
+<!doctype html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>
+            Perfil do Jogador
+        </title>
+        <link rel="stylesheet" type="text/css" href="../CSS/geral.css">      
+        <link rel="stylesheet" type="text/css" href="../CSS/text.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/media.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/header-footer.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/boxes-buttons.css">
+
+
+        <script src="../JS/main.js"></script>   
+        <script src="../JS/registo_login.js"></script>
+
+    </head>
+    <body>
+        <my-header></my-header>
+
+        <h1 class = "h1-center" id="username-perfil">Username</h1>
+        <div class="foto-perfil">
+            <img  src="../Imagens/perfil/foto-perfil.jpg">
+            
+        </div>
+        <div class="lapis-perfil" onclick="editProfile()">
+            <img src="../Imagens/perfil/edita-perfil.jpg">
+        </div>
+       
+        <div class="dados-jogador">
+            <p id="genero-perfil"></p>
+            <p id="idade-perfil"></p>
+            
+        </div>
+        </div>
+        <form id="edit-profile-form"  style="display: none;">
+            <fieldset>
+            
+                
+                <legend>Editar perfil</legend>
+                <label for="new-username">Mudar de username:</label><br>
+                <input type="text" id="new-username" placeholder="Introduza um novo username"><br>
+                <label for="new-gender">Mudar o género:</label><br>
+                                    <select id="new-gender" required>
+                                        <option value="masculino" name="genero">Masculino</option>
+                                        <option value="feminino" name="genero">Feminino</option>
+                                        <option value="outro" name="genero">Outro</option>
+                                    </select> <br>
+        
+                <label for="new-age">Mudar a idade:</label><br>
+                    <select id="new-age" required>
+                        <option value="menos18" name="idade">Abaixo de 18</option>
+                        <option value="18-24" name="idade">18-24</option>
+                        <option value="25-34" name="idade">25-34</option>
+                        <option value="35-44" name="idade">35-44</option>
+                        <option value="45-54" name="idade">45-54</option>
+                        <option value="55-64" name="idade">55-64</option>
+                        <option value="65mais" name="idade">65+</option>
+                    </select> <br>
+                    <br>
+                <button type="submit" id="guarda-alteracoes" class="botao-geral">Guardar alterações</button>
+                <button class="close-edit botao-geral" onclick="cancelEdit()">Cancelar</a>
+            </fieldset>
+
+        </form>
+        
+
+
+        <div class="estatisticas">
+            <h2 class = "h2-center">Estatísticas de jogo</h2>
+            <div class="caixa-estatisticas" class = "texto-informativo-center">
+                <p class="nome">Número de jogos:</p>
+                <p>21</p>
+                <p class="nome">Tempo total:</p>
+                <p>00:21:22</p>
+                <p class="nome">Melhor tempo:</p>
+                <p>00:02:32</p>
+            </div>
+            
+        </div>
+
+        <div class="ultimos">
+            <h2 class = "h2-center">Últimos jogos</h2>
+            <div class="caixa-ultimos" class = "texto-informativo-center">
+                <p class="nome">ID jogo</p>
+                <p class="nome">Modo de jogo</p>
+                <p class="nome">Tempo</p>
+                
+                <p>A12</p>
+                <p>Trios</p>
+                <p>00:02:45</p>
+
+                <p>A11</p>
+                <p>Trios</p>
+                <p>00:02:57</p>
+
+                <p>A10</p>
+                <p>Corrida</p>
+                <p>00:01:45</p>
+            </div>
+            
+        </div>
+
+
+
+        <my-footer></my-footer>
+    </body>
+</html>

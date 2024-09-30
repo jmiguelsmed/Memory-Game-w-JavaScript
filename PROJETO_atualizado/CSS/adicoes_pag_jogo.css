@@ -1,0 +1,108 @@
+/*
+--.----------ITW23/24 - Grupo 39 ----------
+------------ Iolanda Leal 48069 -----------
+------------ José Medeiros 58607 ----------
+---------------Rita Wang 57143 ------------
+-------------------------------------------
+*/
+
+.input_popup {
+    width: 20%; 
+    text-align: center;
+
+}
+
+
+#nr_cartas {
+    margin-top: 3%;
+}
+#nr_cartas span, #nr_col span {
+    text-align: left;
+}
+
+
+#baralho-1, #baralho-2, #baralho-3 {
+    width: 22%;
+    margin-left: 2%;
+    border-radius: 5px;
+    border: 2px solid black ;
+    transition: transform 0.3s ease; /* add this line */
+}
+
+#baralho-1.clicked, #baralho-2.clicked, #baralho-3.clicked {
+    transform: scale(1.1); /* add this line */
+    border: ridge red;
+}
+
+#countdown {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    
+    font-size: larger;
+    color: red;
+    display: none;
+}
+/*
+#start_pause{
+    width:100%;
+    align-items: center;
+}
+*/
+
+#popup-pause {
+    z-index: 999;
+}
+#popup-baralho{
+    z-index: 999;
+
+}
+
+
+#gato-pausado{
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    width: 50%;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+#titulo_pause{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.popup{
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    width: 30%;
+    transition: all 5s ease-in-out;
+}
+
+.buttons-pause{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#gato-pausado{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
